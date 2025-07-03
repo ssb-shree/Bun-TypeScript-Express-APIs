@@ -10,8 +10,8 @@ app.use(
   )
 );
 
-app.get("/", (req: Request, res: Response) => {
-  res.send("hello");
+app.get("/ping", (req: Request, res: Response) => {
+  res.send("pong").status(200);
 });
 
 export default app;
